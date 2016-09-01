@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <script>
+    /*
+    <body>
+    </body>
+    </html>
+    */
+    </script>
+    <title>Jason Wang-Archive</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <style>
+        .imgbox
+        {
+            width:320px;
+            padding:2px;
+            margin:2px;
+            border: solid black 2px;
+            
+        }
+        #right
+        {
+    	    overflow-y: auto;
+	    overflow-x: hidden;
+        }
+        #inner
+        {
+            width:1250px;
+            margin-left:100px;
+        }
+    </style>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+	<script type="text/javascript">
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/show1.jpg",
+				"images/show2.jpg",
+				"images/show3.jpg",
+                                "images/show4.jpg",
+                                "images/show5.jpg",
+                                "images/show6.jpg",
+                                "images/show7.jpg",
+                                "images/show8.jpg",
+                                "images/show9.jpg"
+			)
+	</script>
+</head>
+<body>
+
+    <div id="outercontainer">
+        <div id="left">
+            <a href="index.html">
+            <img src="images/logos.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="recent.html">
+            <img src="images/recent.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="landscape.html">
+            <img src="images/landscape.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="archive.html">
+            <img src="images/archive.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="about.html">
+            <img src="images/about.png" style="width:325px">
+            </a>
+            <hr/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <hr/>
+            <ul class="links">
+            <li><a class="alist" href="contact.html">Contact</a></li>
+            <li><a href="http://instagram.com/wasonjang?ref=badge" class="c"><img src="images/insta.png" style="width:12px; height:12px;">&nbsp;@wasonjang</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <div id="inner">
+            <a href="images/show1.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;" class="imgbox" src="images/show1.jpg"/></a>
+            <a href="images/show6.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;" class="imgbox" src="images/show6.jpg"/></a>
+            <a href="images/show3.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;" class="imgbox" src="images/show3.jpg"/></a>
+            <a href="images/show2.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;"class="imgbox" src="images/show2.jpg"/></a>
+                        <div style="clear:both"></div>
+            <a href="images/show7.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;" class="imgbox" src="images/show7.jpg"/></a>
+            <a href="images/show9.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;"class="imgbox" src="images/show9.jpg"/></a>
+            <a href="images/show4.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;" class="imgbox" src="images/show4.jpg"/></a>
+            <a href="images/show8.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;" class="imgbox" src="images/show8.jpg"/></a>
+               <div style="clear:both"></div>
+            <a href="images/show5.jpg" data-lightbox="image-1" data-title="My caption"><img style="float:left;"class="imgbox" src="images/show5.jpg"/></a>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>

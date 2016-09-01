@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <script>
+    /*
+    <body>
+    </body>
+    </html>
+    */
+    </script>
+    <title>Jason Wang</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+
+    .rslides li:first-child {
+      position: relative;
+      display: block;
+      float: left;
+      }
+
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+    }
+    </style>
+    	<script type="text/javascript">
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/show1.jpg",
+				"images/show2.jpg",
+				"images/show3.jpg",
+                                "images/show4.jpg",
+                                "images/show5.jpg",
+                                "images/show6.jpg",
+                                "images/show7.jpg",
+                                "images/show8.jpg",
+                                "images/show9.jpg"
+			)
+	</script>
+</head>
+<body>
+
+    <div id="outercontainer">
+        <div id="left">
+            <a href="index.html">
+            <img src="images/logos.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="recent.html">
+            <img src="images/recent.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="landscape.html">
+            <img src="images/landscape.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="archive.html">
+            <img src="images/archive.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="about.html">
+            <img src="images/about.png" style="width:325px">
+            </a>
+            <hr/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <hr/>
+            <ul class="links">
+            <li><a class="alist" href="contact.html">Contact</a></li>
+            <li><a href="http://instagram.com/wasonjang?ref=badge" class="c"><img src="images/insta.png" style="width:12px; height:12px;">&nbsp;@wasonjang</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <ul class="rslides">
+              <li><img src="images/main.jpg" style="height:880px; width:1350px;"></li>
+              <li><img src="images/main2.jpg" style="height:880px; width:1350px;"></li>
+              <li><img src="images/main3.jpg" style="height:880px; width:1350px;"></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="slide/responsiveslides.min.js"></script>
+    <script>
+    $(function() {
+      $(".rslides").responsiveSlides();
+    });
+    </script>
+</body>
+</html>

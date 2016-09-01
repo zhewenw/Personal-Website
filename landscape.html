@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <script>
+    /*
+    <body>
+    </body>
+    </html>
+    */
+    </script>
+    <title>Jason Wang-Landscape</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+        .pic
+        {
+            margin:0;
+            display: block;
+        }
+        #right
+        {
+    	    overflow-y: auto;
+	    overflow-x: hidden;
+        }
+    </style>
+	<script type="text/javascript">
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/a1b.jpg",
+				"images/a1.jpg",
+				"images/a2b.jpg",
+                                "images/a2.jpg",
+                                "images/a3b.jpg",
+                                "images/a3.jpg",
+                                "images/a4b.jpg",
+                                "images/a4.jpg",
+                                "images/a5b.jpg",
+                                "images/a5.jpg"
+			)
+	</script>
+</head>
+<body>
+
+    <div id="outercontainer">
+        <div id="left">
+            <a href="index.html">
+            <img src="images/logos.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="recent.html">
+            <img src="images/recent.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="landscape.html">
+            <img src="images/landscape.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="archive.html">
+            <img src="images/archive.png" style="width:325px">
+            </a>
+            <hr/>
+            <a class="nav" href="about.html">
+            <img src="images/about.png" style="width:325px">
+            </a>
+            <hr/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <hr/>
+            <ul class="links">
+            <li><a class="alist" href="contact.html">Contact</a></li>
+            <li><a href="http://instagram.com/wasonjang?ref=badge" class="c"><img src="images/insta.png" style="width:12px; height:12px;">&nbsp;@wasonjang</a></li>
+            </ul>
+        </div>
+        <div id="right">
+              <img class="pic" src="images/a1b.jpg" onmouseover="this.src='images/a1.jpg'" onmouseout="this.src='images/a1b.jpg'" style="height:780px; width:1350px;">
+              <img class="pic" src="images/a2b.jpg" onmouseover="this.src='images/a2.jpg'" onmouseout="this.src='images/a2b.jpg'" style="height:780px; width:1350px;">
+              <img class="pic" src="images/a5b.jpg" onmouseover="this.src='images/a5.jpg'" onmouseout="this.src='images/a5b.jpg'" style="height:780px; width:1350px;">
+              <img class="pic" src="images/a3b.jpg" onmouseover="this.src='images/a3.jpg'" onmouseout="this.src='images/a3b.jpg'" style="height:780px; width:1350px;">
+              <img class="pic" src="images/a4b.jpg" onmouseover="this.src='images/a4.jpg'" onmouseout="this.src='images/a4b.jpg'" style="height:780px; width:1350px;">
+        </div>
+
+    </div>
+
+</body>
+</html>

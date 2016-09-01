@@ -1,0 +1,51 @@
+        body{
+            background-image: url("images/b.jpg");
+            font-family: Font;
+        }
+        #outercontainer{
+            width:1675px;
+            margin-top:20px;
+            height:880px;
+            background-color: white;
+            
+        }
+        .c
+        {
+            text-decoration: none;
+            color:black;
+        }
+        #left{
+            width:325px;
+            height:880px;
+	    float:left;
+            background-color: white;
+	    overflow:hidden;  //code added to prevent scroll
+    	    position:absolute;
+        }
+        #right{
+            height:880px;
+            float:left;
+            background-color:white;
+        }
+        .links li{
+            list-style: none;
+            font-size:14px;
+            margin-left:5px;
+        }
+        .links {
+            padding-top:0;
+            padding-left:0;
+        }
+         @font-face {
+         font-family: Font;
+         src: url(MANIFESTO.ttf);
+        }
+        .nav:hover{
+            background-color: #969696;            
+        }
+	.alist{
+	    text-decoration: none;
+	    color:black;
+	}
+
+        
